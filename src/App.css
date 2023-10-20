@@ -6,6 +6,7 @@
   gap: 50px;
   width: 1440px;
   margin: auto;
+  padding-top: 45px;
 }
 
 /**************** Home ***************/
@@ -154,5 +155,81 @@ footer p {
 .bars {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 1240px;
+}
+
+.bar {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 5px;
+  background-color: #ff6060;
+  width: 1023px;
+  height: 52px;
+  padding: 0 20px 0 15px;
+  margin-bottom: 30px;
+}
+
+.bar p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 0;
+  align-self: stretch;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 143%;
+}
+
+.arrow.active {
+  transform: rotate(180deg);
+  transition: 0.5s ease;
+}
+
+.arrow.inactive {
+  transform: rotate(0);
+  transition: 0.5s ease;
+}
+
+.text {
+  color: #ff6060;
+  width: 1023px;
+  background-color: #f6f6f6;
+  padding: 20px;
+  position: relative;
+  margin: 0px;
+  top: -30px;
+}
+
+.text.active {
+  animation: appear 0.5s ease-in-out forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
+.text.inactive {
+  animation: disappear 0.5s ease-in-out forwards;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
