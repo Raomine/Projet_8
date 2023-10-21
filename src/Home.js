@@ -37,32 +37,32 @@ function Banner() {
 function Cards() {
   return (
     <main className="cards">
-      <a href="*">
+      <a href="/Logements">
         <div className="card">
           <p>Titre de la location</p>
         </div>
       </a>
-      <a href="*">
+      <a href="/Logements">
         <div className="card">
           <p>Titre de la location</p>
         </div>
       </a>
-      <a href="*">
+      <a href="/Logements">
         <div className="card">
           <p>Titre de la location</p>
         </div>
       </a>
-      <a href="*">
+      <a href="/Logements">
         <div className="card">
           <p>Titre de la location</p>
         </div>
       </a>
-      <a href="*">
+      <a href="/Logements">
         <div className="card">
           <p>Titre de la location</p>
         </div>
       </a>
-      <a href="*">
+      <a href="/Logements">
         <div className="card">
           <p>Titre de la location</p>
         </div>

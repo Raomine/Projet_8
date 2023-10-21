@@ -271,3 +271,79 @@ footer p {
   font-size: 18px;
   font-weight: 500;
 }
+
+/**************** Logements ***************/
+.carrousel {
+  width: 1240px;
+  height: 415px;
+}
+
+.content {
+  display: flex;
+  width: 1240px;
+  justify-content: space-between;
+}
+
+.title {
+  color: #ff6060;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 75%;
+  width: 550px;
+}
+
+.title span {
+  color: #ff6060;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.name {
+  color: #ff6060;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100px;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+.picture {
+  width: 64px;
+  height: 64px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+}
+
+.infos {
+  display: flex;
+  width: 1240px;
+  justify-content: space-between;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  width: 115px;
+  height: 25px;
+  border-radius: 10px;
+  background: #ff6060;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
