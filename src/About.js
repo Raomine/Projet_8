@@ -20,7 +20,7 @@ function Header() {
     <header>
       <img src={Logox} alt="Logo Kasa"></img>
       <nav>
-        <a href="/*">Accueil</a>
+        <a href="/">Accueil</a>
         <a href="/About">A Propos</a>
       </nav>
     </header>
