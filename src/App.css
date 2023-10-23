@@ -278,6 +278,12 @@ footer p {
   height: 415px;
 }
 
+.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .content {
   display: flex;
   width: 1240px;
@@ -291,6 +297,7 @@ footer p {
   font-weight: 500;
   line-height: 75%;
   width: 550px;
+  margin: 0;
 }
 
 .title span {
@@ -334,16 +341,98 @@ footer p {
 .tags {
   display: flex;
   gap: 10px;
+  height: 25px;
 }
 
 .tag {
   width: 115px;
-  height: 25px;
   border-radius: 10px;
+  padding: 5px;
   background: #ff6060;
   color: #fff;
   text-align: center;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 500;
+  margin: 0;
+}
+
+.contents section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.descriptions {
+  display: flex;
+  justify-content: space-between;
+  width: 582px;
+  height: 32px;
+  padding: 10px 20px 10px 10px;
+  border-radius: 10px;
+  background-color: #ff6060;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.equipements {
+  display: flex;
+  justify-content: space-between;
+  width: 582px;
+  height: 32px;
+  padding: 10px 20px 10px 10px;
+  border-radius: 10px;
+  background-color: #ff6060;
+}
+
+.equipement {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.logementText {
+  color: #ff6060;
+  width: 570px;
+  background-color: #f6f6f6;
+  padding: 20px;
+  position: relative;
+  margin: 0px;
+}
+
+.logementText.active {
+  animation: appear 0.5s ease-in-out forwards;
+}
+
+.logementText.inactive {
+  animation: disappear 0.5s ease-in-out forwards;
+}
+
+.logementTextTwo {
+  color: #ff6060;
+  width: 570px;
+  background-color: #f6f6f6;
+  padding: 20px;
+  position: relative;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.logementTextTwo.active {
+  animation: appear 0.5s ease-in-out forwards;
+}
+
+.logementTextTwo.inactive {
+  animation: disappear 0.5s ease-in-out forwards;
 }
