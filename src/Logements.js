@@ -34,7 +34,7 @@ function Logement() {
   return (
     <>
       <div className="carrousel">
-        <img src={Cover} alt="Photo du logement"></img>
+        <img src={Cover} alt="Cozy loft on the Canal Saint-Martin"></img>
       </div>
       <div className="contents">
         <div className="content">

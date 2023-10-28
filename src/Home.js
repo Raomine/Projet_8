@@ -1,6 +1,7 @@
 import "./App.css";
 import Logox from "./assets/LOGOKasax1.5.svg";
 import LogoFooter from "./assets/LOGOFooter.png";
+import Data from "./LogementsData.js";
 
 export default function Home() {
   return (
@@ -37,36 +38,14 @@ function Banner() {
 function Cards() {
   return (
     <main className="cards">
-      <a href="/Logements">
-        <div className="card">
-          <p>Titre de la location</p>
-        </div>
-      </a>
-      <a href="/Logements">
-        <div className="card">
-          <p>Titre de la location</p>
-        </div>
-      </a>
-      <a href="/Logements">
-        <div className="card">
-          <p>Titre de la location</p>
-        </div>
-      </a>
-      <a href="/Logements">
-        <div className="card">
-          <p>Titre de la location</p>
-        </div>
-      </a>
-      <a href="/Logements">
-        <div className="card">
-          <p>Titre de la location</p>
-        </div>
-      </a>
-      <a href="/Logements">
-        <div className="card">
-          <p>Titre de la location</p>
-        </div>
-      </a>
+      {Data.map(({ id, title, cover }) => (
+        <a key={id} href="/Logements">
+          <div className="card">
+            <img src={cover} alt={title} />
+            <h3>{title}</h3>
+          </div>
+        </a>
+      ))}
     </main>
   );
 }

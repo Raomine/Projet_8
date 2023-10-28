@@ -70,19 +70,18 @@ nav a {
 /* Cards */
 .cards {
   width: 1240px;
-  height: 829px;
   border-radius: 25px;
   background: #f6f6f6;
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  align-items: center;
-  align-content: center;
   justify-content: center;
+  padding: 50px 0px;
 }
 
 .cards a {
   text-decoration: none;
+  width: 340px;
   height: 340px;
 }
 
@@ -90,19 +89,22 @@ nav a {
   width: 340px;
   height: 340px;
   border-radius: 10px;
-  background: linear-gradient(180deg, #ff6060 0%, #993636 100%);
-  display: flex;
-  align-content: center;
-  align-items: flex-end;
 }
 
-.card p {
+.card img {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+}
+
+.card h3 {
   color: #fff;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 500;
   line-height: 143%;
-  width: 100px;
+  position: relative;
+  top: -80px;
   margin: 20px;
 }
 
