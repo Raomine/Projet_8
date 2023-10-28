@@ -41,6 +41,7 @@ function Cards() {
       {Data.map(({ id, title, cover }) => (
         <a key={id} href="/Logements">
           <div className="card">
+            <div className="gradient"></div>
             <img src={cover} alt={title} />
             <h3>{title}</h3>
           </div>
