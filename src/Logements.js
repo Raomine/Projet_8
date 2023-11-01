@@ -1,10 +1,11 @@
 import "./App.css";
 import Logox from "./assets/LOGOKasax1.5.svg";
 import LogoFooter from "./assets/LOGOFooter.png";
-import Cover from "./assets/Background_img.png";
 import { FaStar } from "react-icons/fa6";
 import { FaAngleUp } from "react-icons/fa6";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Carousel from "./Carousel.js";
 
 export default function Logements() {
   return (
@@ -21,8 +22,8 @@ function Header() {
     <header>
       <img src={Logox} alt="Logo Kasa"></img>
       <nav>
-        <a href="/">Accueil</a>
-        <a href="/About">A Propos</a>
+        <Link to="/">Accueil</Link>
+        <Link to="/About">A Propos</Link>
       </nav>
     </header>
   );
@@ -31,10 +32,11 @@ function Header() {
 function Logement() {
   const [open, setOpen] = useState(false);
   const [openTwo, setOpenTwo] = useState(false);
+
   return (
     <>
-      <div className="carrousel">
-        <img src={Cover} alt="Cozy loft on the Canal Saint-Martin"></img>
+      <div>
+        <Carousel />
       </div>
       <div className="contents">
         <div className="content">
@@ -90,7 +92,7 @@ function Logement() {
             <div className="descriptions">
               <p className="description">Description</p>
               <FaAngleUp
-                className={`arrow ${open ? `active` : `inactive`}`}
+                className={`arrow-down ${open ? `active` : `inactive`}`}
                 style={{
                   color: "white",
                   fontSize: "32px",
@@ -113,7 +115,7 @@ function Logement() {
             <div className="equipements">
               <p className="equipement">Équipements</p>
               <FaAngleUp
-                className={`arrow ${openTwo ? `active` : `inactive`}`}
+                className={`arrow-down ${openTwo ? `active` : `inactive`}`}
                 style={{
                   color: "white",
                   fontSize: "32px",

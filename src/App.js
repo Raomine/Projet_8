@@ -8,14 +8,12 @@ import Logements from "./Logements";
 function App() {
   return (
     <Router>
-      <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="*" element={<Error />} />
-          <Route path="/Logements" element={<Logements />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="*" element={<Error />} />
+        <Route path="/Logements" element={<Logements />} />
+      </Routes>
     </Router>
   );
 }

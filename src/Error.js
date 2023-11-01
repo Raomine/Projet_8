@@ -1,6 +1,7 @@
 import "./App.css";
 import Logox from "./assets/LOGOKasax1.5.svg";
 import LogoFooter from "./assets/LOGOFooter.png";
+import { Link } from "react-router-dom";
 
 function Error() {
   return (
@@ -17,8 +18,8 @@ function Header() {
     <header>
       <img src={Logox} alt="Logo Kasa"></img>
       <nav>
-        <a href="/">Accueil</a>
-        <a href="/About">A Propos</a>
+        <Link to="/">Accueil</Link>
+        <Link to="/About">A Propos</Link>
       </nav>
     </header>
   );
@@ -29,9 +30,9 @@ function Main() {
     <>
       <p className="error">404</p>
       <p className="oups">Oups! La page que vous demandez n'existe pas.</p>
-      <a className="home" href="/">
+      <Link className="home" to="/">
         Retourner sur la page d’accueil
-      </a>
+      </Link>
     </>
   );
 }
