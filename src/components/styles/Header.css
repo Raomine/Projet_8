@@ -1,0 +1,25 @@
+/* Header */
+header {
+  display: flex;
+  width: 1240px;
+  height: 68px;
+  justify-content: center;
+  align-items: center;
+  gap: 720px;
+}
+
+nav {
+  display: flex;
+  align-items: flex-start;
+  gap: 57px;
+}
+
+nav a {
+  color: #ff6060;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 143%;
+  text-decoration-line: underline;
+}

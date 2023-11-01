@@ -1,35 +1,10 @@
-import "./App.css";
-import Logox from "./assets/LOGOKasax1.5.svg";
-import LogoFooter from "./assets/LOGOFooter.png";
+import "./styles/Logement.css";
+import Carousel from "./Carousel.js";
+import React, { useState } from "react";
 import { FaStar } from "react-icons/fa6";
 import { FaAngleUp } from "react-icons/fa6";
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Carousel from "./Carousel.js";
 
-export default function Logements() {
-  return (
-    <div className="container">
-      <Header />
-      <Logement />
-      <Footer />
-    </div>
-  );
-}
-
-function Header() {
-  return (
-    <header>
-      <img src={Logox} alt="Logo Kasa"></img>
-      <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/About">A Propos</Link>
-      </nav>
-    </header>
-  );
-}
-
-function Logement() {
+export default function Logement() {
   const [open, setOpen] = useState(false);
   const [openTwo, setOpenTwo] = useState(false);
 
@@ -140,14 +115,5 @@ function Logement() {
         </section>
       </div>
     </>
-  );
-}
-
-function Footer() {
-  return (
-    <footer>
-      <img src={LogoFooter} alt="Logo Kasa"></img>
-      <p>© 2020 Kasa. All rights reserved</p>
-    </footer>
   );
 }

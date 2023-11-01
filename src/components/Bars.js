@@ -1,42 +1,8 @@
-import "./App.css";
-import Logox from "./assets/LOGOKasax1.5.svg";
-import LogoFooter from "./assets/LOGOFooter.png";
+import "./styles/Bars.css";
 import { FaAngleUp } from "react-icons/fa6";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
-export default function Error() {
-  return (
-    <div className="container">
-      <Header />
-      <Banner />
-      <Bars />
-      <Footer />
-    </div>
-  );
-}
-
-function Header() {
-  return (
-    <header>
-      <img src={Logox} alt="Logo Kasa"></img>
-      <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/About">A Propos</Link>
-      </nav>
-    </header>
-  );
-}
-
-function Banner() {
-  return (
-    <div className="bannerAbout">
-      <div className="darken"></div>
-    </div>
-  );
-}
-
-function Bars() {
+export default function Bars() {
   const [open, setOpen] = useState(false);
   const [openTwo, setOpenTwo] = useState(false);
   const [openThree, setOpenThree] = useState(false);
@@ -46,7 +12,7 @@ function Bars() {
       <div className="bar">
         <p>Fiabilité</p>
         <FaAngleUp
-          className={`arrow ${open ? `active` : `inactive`}`}
+          className={`arrow-down ${open ? `active` : `inactive`}`}
           style={{ color: "white", fontSize: "32px", alignSelf: "center" }}
           onClick={() => {
             setOpen(!open);
@@ -61,7 +27,7 @@ function Bars() {
       <div className="bar">
         <p>Respect</p>
         <FaAngleUp
-          className={`arrow ${openTwo ? `active` : `inactive`}`}
+          className={`arrow-down ${openTwo ? `active` : `inactive`}`}
           style={{ color: "white", fontSize: "32px", alignSelf: "center" }}
           onClick={() => {
             setOpenTwo(!openTwo);
@@ -76,7 +42,7 @@ function Bars() {
       <div className="bar">
         <p>Service</p>
         <FaAngleUp
-          className={`arrow ${openThree ? `active` : `inactive`}`}
+          className={`arrow-down ${openThree ? `active` : `inactive`}`}
           style={{ color: "white", fontSize: "32px", alignSelf: "center" }}
           onClick={() => {
             setOpenThree(!openThree);
@@ -91,7 +57,7 @@ function Bars() {
       <div className="bar">
         <p>Sécurité</p>
         <FaAngleUp
-          className={`arrow ${openFour ? `active` : `inactive`}`}
+          className={`arrow-down ${openFour ? `active` : `inactive`}`}
           style={{ color: "white", fontSize: "32px", alignSelf: "center" }}
           onClick={() => {
             setOpenFour(!openFour);
@@ -107,14 +73,5 @@ function Bars() {
         domestique pour nos hôtes.
       </p>
     </div>
-  );
-}
-
-function Footer() {
-  return (
-    <footer>
-      <img src={LogoFooter} alt="Logo Kasa"></img>
-      <p>© 2020 Kasa. All rights reserved</p>
-    </footer>
   );
 }

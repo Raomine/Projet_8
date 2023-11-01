@@ -1,0 +1,43 @@
+/* Bannière */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  background-image: url(../../assets/IMGBanniere.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 143%;
+  z-index: 2;
+}
+
+.darken {
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  position: absolute;
+  background-color: black;
+  opacity: 0.3;
+}
+
+/* Bannière About */
+.bannerAbout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  background-image: url(../../assets/IMGApropos.png);
+  background-size: cover;
+  background-position: center;
+}

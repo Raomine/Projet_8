@@ -1,4 +1,5 @@
-import Data from "./LogementsData.js";
+import "./styles/Carousel.css";
+import Data from "../data/LogementsData.js";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import React, { useState } from "react";
 

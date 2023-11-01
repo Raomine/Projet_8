@@ -1,9 +1,9 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
-import Error from "./Error";
-import Logements from "./Logements";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Error from "./pages/Error";
+import Logements from "./pages/Logements";
 
 function App() {
   return (
