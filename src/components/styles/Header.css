@@ -1,11 +1,10 @@
 /* Header */
 header {
   display: flex;
-  width: 1240px;
+  width: 86%;
   height: 68px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 720px;
 }
 
 nav {
@@ -20,6 +19,5 @@ nav a {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 500;
-  line-height: 143%;
   text-decoration-line: underline;
 }

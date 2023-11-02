@@ -1,5 +1,6 @@
 import "./styles/Logement.css";
 import Carousel from "./Carousel.js";
+import Data from "../data/LogementsData.js";
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa6";
 import { FaAngleUp } from "react-icons/fa6";
@@ -10,8 +11,8 @@ export default function Logement() {
 
   return (
     <>
-      <div>
-        <Carousel />
+      <div className="carousel">
+        <Carousel slides={Data} />
       </div>
       <div className="contents">
         <div className="content">
@@ -63,7 +64,7 @@ export default function Logement() {
           </div>
         </div>
         <section>
-          <div>
+          <div className="d_pull-down">
             <div className="descriptions">
               <p className="description">Description</p>
               <FaAngleUp
@@ -86,7 +87,7 @@ export default function Logement() {
               pour ceux qui souhaitent se déplacer en voiture.
             </p>
           </div>
-          <div>
+          <div className="e_pull-down">
             <div className="equipements">
               <p className="equipement">Équipements</p>
               <FaAngleUp

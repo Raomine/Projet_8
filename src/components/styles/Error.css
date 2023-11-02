@@ -1,14 +1,4 @@
 /**************** Error ***************/
-.errorContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 140px;
-  width: 1440px;
-  margin: auto;
-  padding-top: 45px;
-}
-
 .error {
   color: #ff6060;
   text-align: center;
@@ -19,7 +9,7 @@
 }
 
 .oups {
-  width: 872px;
+  width: 60.5%;
   color: #ff6060;
   font-family: Montserrat;
   font-size: 36px;

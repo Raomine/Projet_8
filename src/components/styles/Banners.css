@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1240px;
+  width: 86%;
   height: 223px;
   border-radius: 25px;
   background-image: url(../../assets/IMGBanniere.png);
@@ -21,7 +21,8 @@
 }
 
 .darken {
-  width: 1240px;
+  width: 86%;
+  max-width: 1240px;
   height: 223px;
   border-radius: 25px;
   position: absolute;
@@ -34,7 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1240px;
+  width: 86%;
   height: 223px;
   border-radius: 25px;
   background-image: url(../../assets/IMGApropos.png);

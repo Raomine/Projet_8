@@ -4,7 +4,7 @@ import Footer from "../components/Footer.js";
 
 export default function Error() {
   return (
-    <div className="errorContainer">
+    <div className="container">
       <Header />
       <Main />
       <Footer />

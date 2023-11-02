@@ -3,37 +3,45 @@ import Data from "../data/LogementsData.js";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import React, { useState } from "react";
 
-export default function Carousel(pictures) {
-  const [slide, setSlide] = useState(0);
+const ImageSlider = ({ slides }) => {
+  const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
-    setSlide(slide === Data.length - 1 ? 0 : slide + 1);
+    setCurrent(current === slides.length - 1 ? 0 : current + 1);
   };
 
   const previousSlide = () => {
-    setSlide(slide === 0 ? Data.length - 1 : slide - 1);
+    setCurrent(current === 0 ? slides.length - 1 : current - 1);
   };
 
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
+
   return (
-    <div className="carousel">
+    <div className="pictures">
       <FaAngleLeft className="arrow arrow-left" onClick={previousSlide} />
-      {Data.map(({ title, pictures, id }) => (
-        <img
-          src={pictures[slide]}
-          alt={title}
-          key={id}
-          className={slide === pictures ? "slide" : "slide slide-hidden"}
-        />
-      ))}
+      {Data.map((pictures, id, title) => {
+        return (
+          <div
+            className={pictures === current ? "slide active" : "slide"}
+            key={id}
+          >
+            {id === current && (
+              <img src={pictures} alt={title} className="image" />
+            )}
+          </div>
+        );
+      })}
       <FaAngleRight className="arrow arrow-right" onClick={nextSlide} />
       <span className="bullets">
-        {Data.map((_, pictures) => {
+        {Data.map((id, pictures) => {
           return (
             <button
-              key={pictures}
-              onClick={() => setSlide(pictures[slide])}
+              key={id}
+              onClick={() => setCurrent(pictures[current])}
               className={
-                slide === pictures ? "bullet" : "bullet bullet-inactive"
+                pictures === current ? "bullet" : "bullet bullet-inactive"
               }
             ></button>
           );
@@ -41,4 +49,6 @@ export default function Carousel(pictures) {
       </span>
     </div>
   );
-}
+};
+
+export default ImageSlider;
