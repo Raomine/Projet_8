@@ -7,6 +7,12 @@ header {
   align-items: center;
 }
 
+.logo {
+  background-image: url(../../assets/LOGOKasax1.5.svg);
+  width: 210px;
+  height: 68px;
+}
+
 nav {
   display: flex;
   align-items: flex-start;
@@ -20,4 +26,20 @@ nav a {
   font-size: 24px;
   font-weight: 500;
   text-decoration-line: underline;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    background-image: url(../../assets/LOGOKasa.svg);
+    width: 145px;
+    height: 47px;
+  }
+
+  nav {
+    gap: 25px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
 }
