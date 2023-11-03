@@ -45,11 +45,6 @@ export default function Logement() {
               <p className="description">Description</p>
               <FaAngleUp
                 className={`arrow-down ${open ? `active` : `inactive`}`}
-                style={{
-                  color: "white",
-                  fontSize: "32px",
-                  alignSelf: "center",
-                }}
                 onClick={() => {
                   setOpen(!open);
                 }}
@@ -68,11 +63,6 @@ export default function Logement() {
               <p className="equipement">Équipements</p>
               <FaAngleUp
                 className={`arrow-down ${openTwo ? `active` : `inactive`}`}
-                style={{
-                  color: "white",
-                  fontSize: "32px",
-                  alignSelf: "center",
-                }}
                 onClick={() => {
                   setOpenTwo(!openTwo);
                 }}

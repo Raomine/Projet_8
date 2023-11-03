@@ -35,8 +35,6 @@
 .host {
   display: flex;
   align-items: center;
-  align-content: flex-start;
-  flex-wrap: wrap;
 }
 
 .name {
@@ -142,6 +140,24 @@
   font-weight: 500;
 }
 
+.arrow-down {
+  color: white;
+  font-size: 32px;
+  align-self: center;
+}
+
+.arrow-down.active {
+  transform: rotate(180deg);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.arrow-down.inactive {
+  transform: rotate(0);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
 .logementText {
   color: #ff6060;
   background-color: #f6f6f6;
@@ -183,7 +199,6 @@
 
   .contents {
     width: 93%;
-    gap: 10px;
   }
 
   .content {
@@ -193,17 +208,39 @@
   .title {
     display: flex;
     flex-direction: column;
+    font-size: 18px;
     line-height: 150%;
     width: 100%;
     margin: 0;
   }
+
   .title span {
     font-size: 14px;
+    padding-top: 10px;
+  }
+
+  .host {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    position: relative;
+    bottom: -60px;
+  }
+
+  .name {
+    font-size: 15px;
+    width: 75px;
+  }
+
+  .picture {
+    width: 32px;
+    height: 32px;
   }
 
   .infos {
     flex-direction: column;
     gap: 25px;
+    position: relative;
+    bottom: 30px;
   }
 
   .tags {
@@ -228,7 +265,8 @@
     flex-direction: column;
     width: 100%;
     gap: 20px;
-    margin-top: 15px;
+    position: relative;
+    bottom: 20px;
   }
 
   .d_pull-down {
@@ -239,11 +277,23 @@
     width: 100%;
   }
 
+  .descriptions {
+    padding: 5px 20px 5px 10px;
+  }
+
   .description {
     font-size: 13px;
   }
 
+  .equipements {
+    padding: 5px 20px 5px 10px;
+  }
+
   .equipement {
     font-size: 13px;
+  }
+
+  .arrow-down {
+    font-size: 22px;
   }
 }

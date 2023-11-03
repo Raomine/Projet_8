@@ -25,3 +25,20 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+@media (max-width: 768px) {
+  .error {
+    font-size: 96px;
+    margin: 88px 0;
+  }
+
+  .oups {
+    font-size: 18px;
+    margin-bottom: 88px;
+  }
+
+  .home {
+    font-size: 14px;
+    margin-bottom: 88px;
+  }
+}

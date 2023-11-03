@@ -62,8 +62,9 @@
     height: 111px;
     width: 93%;
   }
-}
 
-.bannerAbout {
-  width: 93%;
+  .bannerAbout {
+    width: 93%;
+    height: 111px;
+  }
 }

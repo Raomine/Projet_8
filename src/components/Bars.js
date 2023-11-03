@@ -13,7 +13,6 @@ export default function Bars() {
         <p>Fiabilité</p>
         <FaAngleUp
           className={`arrow-down ${open ? `active` : `inactive`}`}
-          style={{ color: "white", fontSize: "32px", alignSelf: "center" }}
           onClick={() => {
             setOpen(!open);
           }}
@@ -28,7 +27,6 @@ export default function Bars() {
         <p>Respect</p>
         <FaAngleUp
           className={`arrow-down ${openTwo ? `active` : `inactive`}`}
-          style={{ color: "white", fontSize: "32px", alignSelf: "center" }}
           onClick={() => {
             setOpenTwo(!openTwo);
           }}

@@ -1,5 +1,4 @@
 import "./styles/Header.css";
-import Logox from "../assets/LOGOKasax1.5.svg";
 import { Link } from "react-router-dom";
 
 export default function Header() {
