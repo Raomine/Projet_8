@@ -32,35 +32,11 @@ export default function Logement() {
             <p className="tag">Paris 10</p>
           </div>
           <div className="rating">
-            <FaStar
-              style={{
-                color: "#ff6060",
-                fontSize: "32px",
-                paddingRight: "10px",
-              }}
-            />
-            <FaStar
-              style={{
-                color: "#ff6060",
-                fontSize: "32px",
-                paddingRight: "10px",
-              }}
-            />
-            <FaStar
-              style={{
-                color: "#ff6060",
-                fontSize: "32px",
-                paddingRight: "10px",
-              }}
-            />
-            <FaStar
-              style={{
-                color: "#E3E3E3",
-                fontSize: "32px",
-                paddingRight: "10px",
-              }}
-            />
-            <FaStar style={{ color: "#E3E3E3", fontSize: "32px" }} />
+            <FaStar className="stars" />
+            <FaStar className="stars" />
+            <FaStar className="stars" />
+            <FaStar className="stars" />
+            <FaStar className="star" />
           </div>
         </div>
         <section>

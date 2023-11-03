@@ -21,18 +21,7 @@ const ImageSlider = ({ slides }) => {
   return (
     <div className="pictures">
       <FaAngleLeft className="arrow arrow-left" onClick={previousSlide} />
-      {Data.map((pictures, id, title) => {
-        return (
-          <div
-            className={pictures === current ? "slide active" : "slide"}
-            key={id}
-          >
-            {id === current && (
-              <img src={pictures} alt={title} className="image" />
-            )}
-          </div>
-        );
-      })}
+
       <FaAngleRight className="arrow arrow-right" onClick={nextSlide} />
       <span className="bullets">
         {Data.map((id, pictures) => {

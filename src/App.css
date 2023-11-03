@@ -8,3 +8,9 @@
   margin: auto;
   padding-top: 45px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    gap: 25px;
+  }
+}

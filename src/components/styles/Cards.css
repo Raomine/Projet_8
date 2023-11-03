@@ -54,3 +54,41 @@
   z-index: 2;
   margin: 20px;
 }
+
+@media (max-width: 768px) {
+  .cards {
+    width: 93%;
+    background: white;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .cards a {
+    width: 100%;
+    max-width: 335px;
+    height: 255px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 335px;
+    height: 255px;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 335px;
+    height: 255px;
+    top: -255px;
+  }
+
+  .gradient {
+    width: 100%;
+    max-width: 335px;
+    height: 255px;
+  }
+
+  .card h3 {
+    top: -340px;
+  }
+}

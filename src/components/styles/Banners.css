@@ -46,6 +46,7 @@
 @media (max-width: 768px) {
   .banner {
     height: 111px;
+    width: 93%;
     justify-content: flex-start;
   }
 
@@ -59,5 +60,10 @@
 
   .darken {
     height: 111px;
+    width: 93%;
   }
+}
+
+.bannerAbout {
+  width: 93%;
 }

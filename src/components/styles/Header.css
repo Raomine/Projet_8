@@ -29,6 +29,10 @@ nav a {
 }
 
 @media (max-width: 768px) {
+  header {
+    width: 93%;
+  }
+
   .logo {
     background-image: url(../../assets/LOGOKasa.svg);
     width: 145px;

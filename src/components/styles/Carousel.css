@@ -6,24 +6,6 @@
   height: 415px;
   position: relative;
 }
-
-.slide {
-  opacity: 0;
-  transition-duration: 1s ease;
-}
-
-.slide.active {
-  opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08);
-}
-
-.image {
-  width: 1000px;
-  height: 600px;
-  border-radius: 10px;
-}
-
 .arrow {
   position: absolute;
   width: 47px;
@@ -45,7 +27,6 @@
 }
 
 .bullets {
-  display: flex;
   position: absolute;
   bottom: 10px;
 }
@@ -63,4 +44,26 @@
 
 .bullet-inactive {
   background-color: gray;
+}
+
+@media (max-width: 768px) {
+  .pictures {
+    height: 255px;
+  }
+  .arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .bullets {
+    width: 100%;
+  }
+
+  .bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    margin: 0 3px;
+    cursor: pointer;
+  }
 }
