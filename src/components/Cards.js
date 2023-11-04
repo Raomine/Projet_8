@@ -6,7 +6,7 @@ export default function Cards() {
   return (
     <main className="cards">
       {Data.map(({ id, title, cover }) => (
-        <Link key={id} to="/Logements">
+        <Link key={id} to={`/Logements/${id}`}>
           <div className="card">
             <div className="gradient"></div>
             <img src={cover} alt={title} />

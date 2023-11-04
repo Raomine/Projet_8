@@ -1,7 +1,9 @@
 import "./styles/Logement.css";
 import Carousel from "./Carousel.js";
+import Error from "../pages/Error.js";
 import Data from "../data/LogementsData.js";
 import React, { useState } from "react";
+import { useParams } from "react-router-dom";
 import { FaStar } from "react-icons/fa6";
 import { FaAngleUp } from "react-icons/fa6";
 
@@ -9,10 +11,18 @@ export default function Logement() {
   const [open, setOpen] = useState(false);
   const [openTwo, setOpenTwo] = useState(false);
 
+  const params = useParams();
+  const datas = Data.find((datas) => datas.id === params.id);
+  if (datas === undefined) {
+    return <Error />;
+  }
+
+  const { pictures, title } = datas;
+
   return (
     <>
       <div className="carousel">
-        <Carousel slides={Data} />
+        <Carousel pictures={pictures} title={title} />
       </div>
       <div className="contents">
         <div className="content">
