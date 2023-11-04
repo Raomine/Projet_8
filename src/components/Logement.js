@@ -1,6 +1,6 @@
 import "./styles/Logement.css";
 import Carousel from "./Carousel.js";
-import Error from "../pages/Error.js";
+import Error from "./MainError.js";
 import Data from "../data/LogementsData.js";
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
