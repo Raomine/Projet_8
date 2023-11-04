@@ -17,7 +17,7 @@ export default function Logement() {
     return <Error />;
   }
 
-  const { pictures, title } = datas;
+  const { pictures, title, location } = datas;
 
   return (
     <>
@@ -27,8 +27,8 @@ export default function Logement() {
       <div className="contents">
         <div className="content">
           <p className="title">
-            Cozy loft on the Canal Saint-Martin{" "}
-            <span>Paris, Île-de-France</span>
+            {title}
+            <span>{location}</span>
           </p>
           <div className="host">
             <p className="name">Alexandre Dumas</p>
