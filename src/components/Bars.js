@@ -12,7 +12,7 @@ export default function Bars() {
       <div className="bar">
         <p>Fiabilité</p>
         <FaAngleUp
-          className={`arrow-down ${open ? `active` : `inactive`}`}
+          className={`arrow-down_bar ${open ? `active` : `inactive`}`}
           onClick={() => {
             setOpen(!open);
           }}
@@ -26,7 +26,7 @@ export default function Bars() {
       <div className="bar">
         <p>Respect</p>
         <FaAngleUp
-          className={`arrow-down ${openTwo ? `active` : `inactive`}`}
+          className={`arrow-down_bar ${openTwo ? `active` : `inactive`}`}
           onClick={() => {
             setOpenTwo(!openTwo);
           }}
@@ -40,8 +40,7 @@ export default function Bars() {
       <div className="bar">
         <p>Service</p>
         <FaAngleUp
-          className={`arrow-down ${openThree ? `active` : `inactive`}`}
-          style={{ color: "white", fontSize: "32px", alignSelf: "center" }}
+          className={`arrow-down_bar ${openThree ? `active` : `inactive`}`}
           onClick={() => {
             setOpenThree(!openThree);
           }}
@@ -55,8 +54,7 @@ export default function Bars() {
       <div className="bar">
         <p>Sécurité</p>
         <FaAngleUp
-          className={`arrow-down ${openFour ? `active` : `inactive`}`}
-          style={{ color: "white", fontSize: "32px", alignSelf: "center" }}
+          className={`arrow-down_bar ${openFour ? `active` : `inactive`}`}
           onClick={() => {
             setOpenFour(!openFour);
           }}
