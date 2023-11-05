@@ -17,7 +17,26 @@ export default function Logement() {
     return <Error />;
   }
 
-  const { pictures, title, location } = datas;
+  const {
+    pictures,
+    title,
+    location,
+    host,
+    tags,
+    rating,
+    description,
+    equipments,
+  } = datas;
+
+  const renderTags = (tag) => {
+    return tag.map((tag) => <p className="tag">{tag}</p>);
+  };
+
+  const stars = [1, 2, 3, 4, 5];
+
+  const renderEquipements = (e) => {
+    return e.map((e) => <li>{e}</li>);
+  };
 
   return (
     <>
@@ -31,22 +50,21 @@ export default function Logement() {
             <span>{location}</span>
           </p>
           <div className="host">
-            <p className="name">Alexandre Dumas</p>
-            <div className="picture"></div>
+            <p className="name">{host.name}</p>
+            <div className="picture">
+              <img src={host.picture} alt={host.name} />
+            </div>
           </div>
         </div>
         <div className="infos">
-          <div className="tags">
-            <p className="tag">Cozy</p>
-            <p className="tag">Canal</p>
-            <p className="tag">Paris 10</p>
-          </div>
+          <div className="tags">{renderTags(tags)}</div>
           <div className="rating">
-            <FaStar className="stars" />
-            <FaStar className="stars" />
-            <FaStar className="stars" />
-            <FaStar className="stars" />
-            <FaStar className="star" />
+            {stars.map((star, id) => (
+              <FaStar
+                key={id}
+                className={`${rating >= star ? "stars" : "star"}`}
+              />
+            ))}
           </div>
         </div>
         <section>
@@ -61,11 +79,7 @@ export default function Logement() {
               />
             </div>
             <p className={`logementText ${open ? `active` : `inactive`}`}>
-              Profitez du charme de la vie parisienne dans un magnifique
-              appartement. A 3 minutes à pied du Canl Saint Martin, vous serez
-              proche des transports, mais également de nombreux commerces.
-              L'appartement est tout équipé, et possède également un parking
-              pour ceux qui souhaitent se déplacer en voiture.
+              {description}
             </p>
           </div>
           <div className="e_pull-down">
@@ -81,12 +95,7 @@ export default function Logement() {
             <ul
               className={`logementTextTwo ${openTwo ? `active` : `inactive`}`}
             >
-              <li>Parking</li>
-              <li>Sèche Cheveux</li>
-              <li>Machine à laver</li>
-              <li>Wi-fi</li>
-              <li>Cuisine équipée</li>
-              <li>Télévision</li>
+              {renderEquipements(equipments)}
             </ul>
           </div>
         </section>
