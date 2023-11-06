@@ -40,10 +40,10 @@ nav a {
   }
 
   nav {
-    gap: 25px;
+    gap: 10px;
   }
 
   nav a {
-    font-size: 12px;
+    font-size: 18px;
   }
 }

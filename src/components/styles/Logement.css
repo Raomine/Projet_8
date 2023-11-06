@@ -146,17 +146,16 @@
   color: white;
   font-size: 32px;
   align-self: center;
+  transition: 0.5s ease;
 }
 
 .arrow-down.active {
   transform: rotate(180deg);
-  transition: 0.5s ease;
   cursor: pointer;
 }
 
 .arrow-down.inactive {
   transform: rotate(0);
-  transition: 0.5s ease;
   cursor: pointer;
 }
 
@@ -166,14 +165,17 @@
   padding: 20px;
   position: relative;
   margin: 0px;
+  transition: transform 0.5s ease;
 }
 
 .logementText.active {
-  animation: appear 0.5s ease-in-out forwards;
+  transform: translateY(0px);
 }
 
 .logementText.inactive {
-  animation: disappear 0.5s ease-in-out forwards;
+  transform: translateY(-30px);
+  display: none;
+  z-index: -1;
 }
 
 .logementTextTwo {
@@ -183,14 +185,17 @@
   position: relative;
   margin: 0px;
   list-style-type: none;
+  transition: transform 0.5s ease;
 }
 
 .logementTextTwo.active {
-  animation: appear 0.5s ease-in-out forwards;
+  transform: translateY(0px);
 }
 
 .logementTextTwo.inactive {
-  animation: disappear 0.5s ease-in-out forwards;
+  transform: translateY(-30px);
+  display: none;
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
