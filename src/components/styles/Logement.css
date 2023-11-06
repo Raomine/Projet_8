@@ -173,9 +173,7 @@
 }
 
 .logementText.inactive {
-  transform: translateY(-30px);
   display: none;
-  z-index: -1;
 }
 
 .logementTextTwo {
@@ -193,9 +191,7 @@
 }
 
 .logementTextTwo.inactive {
-  transform: translateY(-30px);
   display: none;
-  z-index: -1;
 }
 
 @media (max-width: 768px) {

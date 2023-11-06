@@ -3,7 +3,7 @@ import { FaAngleUp } from "react-icons/fa6";
 import React, { useState } from "react";
 
 export default function Bars() {
-  const [open, setOpen] = useState(null);
+  const [open, setOpen] = useState(false);
   const [openTwo, setOpenTwo] = useState(false);
   const [openThree, setOpenThree] = useState(false);
   const [openFour, setOpenFour] = useState(false);
