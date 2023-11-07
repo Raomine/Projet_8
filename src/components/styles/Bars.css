@@ -34,17 +34,16 @@
   color: white;
   font-size: 32px;
   align-self: center;
+  cursor: pointer;
   transition: transform 0.5s ease;
 }
 
 .arrow-down_bar.active {
   transform: rotate(180deg);
-  cursor: pointer;
 }
 
 .arrow-down_bar.inactive {
   transform: rotate(0);
-  cursor: pointer;
 }
 
 .text {
@@ -55,15 +54,23 @@
   position: relative;
   margin: 0px;
   top: -30px;
-  transition: transform 0.5s ease;
+  display: none;
 }
 
 .text.active {
-  transform: translateY(0px);
+  display: block;
+  animation: appear 0.5s ease;
 }
 
-.text.inactive {
-  display: none;
+@keyframes appear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    z-index: -1;
+  }
 }
 
 @media (max-width: 768px) {
@@ -80,7 +87,7 @@
   }
 
   .bar p {
-    font-size: 13px;
+    font-size: 17px;
     margin: 0 0 0 10px;
   }
 
@@ -93,7 +100,7 @@
     width: 89%;
     padding: 5.5%;
     top: -19px;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 150%;
   }
 }

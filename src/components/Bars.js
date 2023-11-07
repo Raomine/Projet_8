@@ -18,7 +18,7 @@ export default function Bars() {
           }}
         />
       </div>
-      <p className={`text ${open ? `active` : `inactive`}`}>
+      <p className={`text ${open && `active`}`}>
         Les annonces postées sur Kasa garantissent une fiabilité totale. Les
         photos sont conformes aux logements, et toutes les informations sont
         régulièrement vérifiées par nos équipes.
@@ -32,7 +32,7 @@ export default function Bars() {
           }}
         />
       </div>
-      <p className={`text ${openTwo ? `active` : `inactive`}`}>
+      <p className={`text ${openTwo && `active`}`}>
         La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
         comportement discriminatoire ou de perturbation du voisinage entraînera
         une exclusion de notre plateforme.
@@ -46,7 +46,7 @@ export default function Bars() {
           }}
         />
       </div>
-      <p className={`text ${openThree ? `active` : `inactive`}`}>
+      <p className={`text ${openThree && `active`}`}>
         La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
         comportement discriminatoire ou de perturbation du voisinage entraînera
         une exclusion de notre plateforme.
@@ -60,7 +60,7 @@ export default function Bars() {
           }}
         />
       </div>
-      <p className={`text ${openFour ? `active` : `inactive`}`}>
+      <p className={`text ${openFour && `active`}`}>
         La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour
         les voyageurs, chaque logement correspond aux critères de sécurité
         établis par nos services. En laissant une note aussi bien à l'hôte qu'au

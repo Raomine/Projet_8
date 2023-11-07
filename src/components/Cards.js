@@ -1,11 +1,12 @@
 import "./styles/Cards.css";
-import Data from "../data/LogementsData.js";
 import { Link } from "react-router-dom";
 
-export default function Cards() {
+export default function Cards(props) {
+  const data = props.data;
+
   return (
     <main className="cards">
-      {Data.map(({ id, title, cover }) => (
+      {data.map(({ id, title, cover }) => (
         <Link key={id} to={`/Logements/${id}`}>
           <div className="card">
             <div className="gradient"></div>

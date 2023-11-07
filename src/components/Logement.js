@@ -78,9 +78,7 @@ export default function Logement() {
                 }}
               />
             </div>
-            <p className={`logementText ${open ? `active` : `inactive`}`}>
-              {description}
-            </p>
+            <p className={`logementText ${open && `active`}`}>{description}</p>
           </div>
           <div className="e_pull-down">
             <div className="equipements">
@@ -92,9 +90,7 @@ export default function Logement() {
                 }}
               />
             </div>
-            <ul
-              className={`logementTextTwo ${openTwo ? `active` : `inactive`}`}
-            >
+            <ul className={`logementTextTwo ${openTwo && `active`}`}>
               {renderEquipements(equipments)}
             </ul>
           </div>
